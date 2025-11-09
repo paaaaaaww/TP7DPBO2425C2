@@ -36,6 +36,7 @@ Relasi :
 - jadwal_shift.id_shift → shift.id_shift
 
 Data awal contoh:
+
 3 pegawai: Andi, Budi, Citra
 
 3 shift: Pagi, Siang, Malam
