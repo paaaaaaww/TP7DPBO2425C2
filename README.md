@@ -41,6 +41,7 @@ Data awal contoh:
 3 jadwal shift sesuai data pegawai dan shift
 
 **3. flow dari code**
+
 Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman dan menggunakan prepared statement untuk mencegah SQL injection.
 
 Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya menampilkan daftar shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
