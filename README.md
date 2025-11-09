@@ -2,6 +2,7 @@
 Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 7 dalam mata kuliah Desain dan Pemrograman Berdasarkan Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 **1. Tema Website**
+
    Website ini dibuat untuk mengelola jadwal kerja pegawai pada perusahaan atau toko. Fitur utama:
    - Mengelola data pegawai (tambah, edit, hapus).
    - Mengelola data shift (tampil semua shift).
@@ -10,6 +11,7 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 7 dalam mata kuliah Desain da
 Tujuan: mempermudah penjadwalan pegawai, mencegah konflik jadwal, dan mempermudah monitoring shift kerja.
 
 **2. Struktur Database**
+
 a. Tabel pegawai (Menyimpan informasi pegawai)
 
 - id_pegawai INT -> Primary Key, auto increment
