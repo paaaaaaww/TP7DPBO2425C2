@@ -37,7 +37,9 @@ Relasi :
 
 Data awal contoh:
 3 pegawai: Andi, Budi, Citra
+
 3 shift: Pagi, Siang, Malam
+
 3 jadwal shift sesuai data pegawai dan shift
 
 **3. flow dari code**
