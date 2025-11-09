@@ -30,6 +30,25 @@ Menyimpan jadwal shift pegawai.
 - id_pegawai	INT	-> Foreign Key ke pegawai(id_pegawai)
 - id_shift	INT	-> Foreign Key ke shift(id_shift)
 - tanggal	DATE -> Tanggal shift
-  
+
+Relasi : 
+- jadwal_shift.id_pegawai → pegawai.id_pegawai
+- jadwal_shift.id_shift → shift.id_shift
+
+Data awal contoh:
+3 pegawai: Andi, Budi, Citra
+3 shift: Pagi, Siang, Malam
+3 jadwal shift sesuai data pegawai dan shift
+
 **3. flow dari code**
+Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman dan menggunakan prepared statement untuk mencegah SQL injection.
+
+Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya menampilkan daftar shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
+
+File index.php menjadi titik masuk utama. Di sini, semua class dipanggil dan digunakan untuk menangani input dari user, baik itu add, update, maupun delete data. index.php juga mengatur routing sederhana: berdasarkan parameter $_GET['page'], website akan menampilkan halaman Pegawai, Shift, atau Jadwal Shift.
+
+Di sisi tampilan, folder view/ berisi file PHP untuk setiap halaman. Form untuk menambah atau mengedit data ditampilkan menggunakan HTML, sedangkan tabel menampilkan semua data dari database. Untuk jadwal shift, data pegawai dan shift digabungkan menggunakan JOIN sehingga terlihat informasi lengkap pegawai, shift, dan waktunya.
+
+CSS di file style.css memastikan tampilan website rapi dan mudah digunakan. Tombol aksi, form, dan tabel diberikan style agar user dapat dengan mudah menavigasi dan melakukan operasi CRUD tanpa kebingungan.
+
 **4. Dokumentasi**
