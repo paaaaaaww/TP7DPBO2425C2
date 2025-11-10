@@ -58,3 +58,7 @@ Di sisi tampilan, folder view/ berisi file PHP untuk setiap halaman. Form untuk 
 CSS di file style.css memastikan tampilan website rapi dan mudah digunakan. Tombol aksi, form, dan tabel diberikan style agar user dapat dengan mudah menavigasi dan melakukan operasi CRUD tanpa kebingungan.
 
 **4. Dokumentasi**
+
+Klik dibawah ini untuk menihat dokumentasi 
+
+https://youtu.be/XW3POND9dLY
