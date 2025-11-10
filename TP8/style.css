@@ -1,0 +1,153 @@
+/* Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontainer utama */
+main {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header & Footer */
+header, footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+
+/* Navigasi */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #1abc9c;
+}
+
+/* Kotak data pegawai */
+h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.form-box {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+/* Tombol */
+button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+/* Tombol utama (Tambah) */
+button.btn-primary {
+    background: #27ae60;
+    color: #fff;
+}
+
+button.btn-primary:hover {
+    background: #2ecc71;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Tombol kecil (Edit, Hapus) */
+a.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin: 0 3px;
+    transition: 0.25s;
+}
+
+/* Warna tombol kecil */
+a.btn-edit {
+    background-color: #3498db;
+}
+a.btn-edit:hover {
+    background-color: #5dade2;
+}
+
+a.btn-delete {
+    background-color: #e74c3c;
+}
+a.btn-delete:hover {
+    background-color: #ec7063;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover td {
+    background-color: #f2f6f9;
+}
+
