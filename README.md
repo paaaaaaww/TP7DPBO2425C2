@@ -33,6 +33,8 @@ c. Tabel jadwal_shift (Menyimpan jadwal shift pegawai)
 - id_shift INT : Foreign Key ke shift(id_shift)
 - tanggal DATE : Tanggal shift
 
+![db](Dokumentasi/db.png)
+
 Relasi : 
 
 ![erd](Dokumentasi/erdtp8.png)
