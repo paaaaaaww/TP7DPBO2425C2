@@ -35,7 +35,7 @@ c. Tabel jadwal_shift (Menyimpan jadwal shift pegawai)
 
 Relasi : 
 
-[! erd](Dokumentasi/erdtp8.png)
+[!erd](Dokumentasi/erdtp8.png)
 
 - jadwal_shift.id_pegawai → pegawai.id_pegawai
 - jadwal_shift.id_shift → shift.id_shift
