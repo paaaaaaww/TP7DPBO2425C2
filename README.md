@@ -14,24 +14,24 @@ Tujuan: mempermudah penjadwalan pegawai, mencegah konflik jadwal, dan mempermuda
 
 a. Tabel pegawai (Menyimpan informasi pegawai)
 
-- id_pegawai INT -> Primary Key, auto increment
-- nama	VARCHAR(100) -> Nama pegawai
-- jabatan	VARCHAR(50)	-> Posisi pegawai
-- no_hp	VARCHAR(15)	-> Nomor HP pegawai
+- id_pegawai INT : Primary Key, auto increment
+- nama VARCHAR(100) : Nama pegawai
+- jabatan VARCHAR(50) : Posisi pegawai
+- no_hp VARCHAR(15) : Nomor HP pegawai
 
 b. Tabel shift (Menyimpan unformasi shift kerja)
 
-- id_shift INT -> Primary Key, auto increment
-- nama_shift	VARCHAR(50)	-> Nama shift (Pagi, Siang, Malam)
-- jam_mulai	TIME -> Jam mulai shift
-- jam_selesai	TIME -> Jam selesai shift
+- id_shift INT : Primary Key, auto increment
+- nama_shift VARCHAR(50) : Nama shift (Pagi, Siang, Malam)
+- jam_mulai	TIME : Jam mulai shift
+- jam_selesai TIME : Jam selesai shift
 
 c. Tabel jadwal_shift (Menyimpan jadwal shift pegawai)
 
-- id_jadwal	INT	-> Primary Key, auto increment
-- id_pegawai	INT	-> Foreign Key ke pegawai(id_pegawai)
-- id_shift	INT	-> Foreign Key ke shift(id_shift)
-- tanggal	DATE -> Tanggal shift
+- id_jadwal	INT : Primary Key, auto increment
+- id_pegawai INT : Foreign Key ke pegawai(id_pegawai)
+- id_shift INT : Foreign Key ke shift(id_shift)
+- tanggal DATE : Tanggal shift
 
 Relasi : 
 
