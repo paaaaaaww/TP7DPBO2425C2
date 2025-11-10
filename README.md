@@ -37,8 +37,8 @@ Relasi :
 
 ![erd](Dokumentasi/erdtp8.png)
 
-- Satu pegawai bisa punya banyak jadwal shift, tapi satu baris jadwal_shift cuma bisa punya satu pegawai (1 : n).
-- Satu shift bisa muncul di banyak jadwal shift, tapi satu jadwal_shift cuma punya satu shift (1 : n).
+- Satu pegawai bisa punya banyak jadwal shift, tapi satu baris jadwal_shift cuma bisa punya satu pegawai.
+- Satu shift bisa muncul di banyak jadwal shift, tapi satu jadwal_shift cuma punya satu shift.
 
 **3. flow dari code**
 
