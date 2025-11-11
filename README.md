@@ -5,10 +5,10 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 7 dalam mata kuliah Desain da
 
    Website ini dibuat untuk mengelola jadwal kerja pegawai pada perusahaan atau toko. Fitur utama:
    - Mengelola data pegawai (tambah, edit, hapus).
-   - Mengelola data shift (tampil semua shift).
+   - Mengelola data shift (hanya dapat diedit karena shift bersifat tetap — pagi, siang, malam).
    - Mengelola jadwal shift pegawai (tambah, edit, hapus), dengan menghubungkan pegawai dan shift pada tanggal tertentu.
      
-Tujuan: mempermudah penjadwalan pegawai, mencegah konflik jadwal, dan mempermudah monitoring shift kerja.
+Tujuan: mempermudah proses penjadwalan kerja, mencegah bentrok shift antarpegawai, dan membantu monitoring jadwal kerja dengan lebih efisien.
 
 **2. Struktur Database**
 
@@ -42,9 +42,9 @@ Relasi :
 - Satu pegawai bisa punya banyak jadwal shift, tapi satu baris jadwal_shift cuma bisa punya satu pegawai.
 - Satu shift bisa muncul di banyak jadwal shift, tapi satu jadwal_shift cuma punya satu shift.
 
-**3. flow dari code**
+**3. flow code**
 
-Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman. Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya menampilkan daftar shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
+Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman. Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya bisa mengedit waktu shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
 
 File index.php menjadi titik masuk utama. Di sini, semua class dipanggil dan digunakan untuk menangani input dari user, baik itu add, update, maupun delete data. index.php juga mengatur routing sederhana: berdasarkan parameter $_GET['page'], website akan menampilkan halaman Pegawai, Shift, atau Jadwal Shift.
 
@@ -56,4 +56,4 @@ CSS di file style.css memastikan tampilan website rapi dan mudah digunakan. Tomb
 
 Klik dibawah ini untuk menihat dokumentasi 
 
-[![Watch the video](https://img.youtube.com/vi/XW3POND9dLY/0.jpg)](https://youtu.be/XW3POND9dLY)
+[![Watch the video](https://img.youtube.com/vi/VJKFw-pc8Zw/0.jpg)](https://youtube/VJKFw-pc8Zw)
