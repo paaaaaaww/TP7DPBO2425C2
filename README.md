@@ -56,4 +56,5 @@ CSS di file style.css memastikan tampilan website rapi dan mudah digunakan. Tomb
 
 Klik dibawah ini untuk menihat dokumentasi 
 
-[![Watch the video](https://img.youtube.com/vi/ThRHVC2xvls/0.jpg)](https://youtube/ThRHVC2xvls)
+[![Watch the video](https://img.youtube.com/vi/ThRHVC2xvls/0.jpg)](https://youtu.be/ThRHVC2xvls)
+
