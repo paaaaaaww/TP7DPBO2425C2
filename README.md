@@ -5,7 +5,7 @@ Saya Fauzia Rahma Nisa mengerjakan Tugas Praktikum 7 dalam mata kuliah Desain da
 
    Website ini dibuat untuk mengelola jadwal kerja pegawai pada perusahaan atau toko. Fitur utama:
    - Mengelola data pegawai (tambah, edit, hapus).
-   - Mengelola data shift (hanya dapat diedit karena shift bersifat tetap — pagi, siang, malam).
+   - Mengelola data shift (hanya dapat diedit karena shift bersifat tetap yaitu pagi, siang, malam).
    - Mengelola jadwal shift pegawai (tambah, edit, hapus), dengan menghubungkan pegawai dan shift pada tanggal tertentu.
      
 Tujuan: mempermudah proses penjadwalan kerja, mencegah bentrok shift antarpegawai, dan membantu monitoring jadwal kerja dengan lebih efisien.
