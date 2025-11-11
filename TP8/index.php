@@ -41,8 +41,11 @@ if (isset($_GET['hapus_jadwal'])) {
     exit;
 }
 
-// tidak ada crud untuk tabel shift
-
+// CRUD Shift
+// Shift (hanya edit)
+if (isset($_POST['edit_shift'])) {
+    $shift->updateShift($_POST['id_shift'], $_POST['nama_shift'], $_POST['jam_mulai'], $_POST['jam_selesai']);
+}
 
 // tampilan (view)
 ?>
@@ -88,3 +91,4 @@ if (isset($_GET['hapus_jadwal'])) {
     <?php include 'view/footer.php'; ?>
 </body>
 </html>
+
