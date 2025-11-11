@@ -44,9 +44,7 @@ Relasi :
 
 **3. flow dari code**
 
-Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman dan menggunakan prepared statement untuk mencegah SQL injection.
-
-Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya menampilkan daftar shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
+Website ini menggunakan konsep Object-Oriented Programming (OOP). Pertama, koneksi ke database dibuat melalui file config/db.php menggunakan PDO, sehingga semua query ke database aman. Setiap tabel memiliki class masing-masing di folder class/. Class Pegawai mengatur semua operasi CRUD untuk data pegawai, class Shift hanya menampilkan daftar shift, sedangkan class JadwalShift mengatur CRUD untuk jadwal shift pegawai. Dengan begitu, setiap operasi database terorganisir dan mudah dipanggil melalui method di masing-masing class.
 
 File index.php menjadi titik masuk utama. Di sini, semua class dipanggil dan digunakan untuk menangani input dari user, baik itu add, update, maupun delete data. index.php juga mengatur routing sederhana: berdasarkan parameter $_GET['page'], website akan menampilkan halaman Pegawai, Shift, atau Jadwal Shift.
 
