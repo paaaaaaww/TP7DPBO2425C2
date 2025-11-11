@@ -1,5 +1,5 @@
 <?php
-require_once 'config/db.php';
+require_once 'config/db.php'; // mengimpor file koneksi database
 
 class Shift {
     private $db;
@@ -16,4 +16,5 @@ class Shift {
 
 }
 ?>
+
 
