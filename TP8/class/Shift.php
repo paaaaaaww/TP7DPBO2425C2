@@ -4,6 +4,7 @@ require_once 'config/db.php';
 class Shift {
     private $db;
 
+    // konstruktor
     public function __construct() {
         $this->db = (new Database())->conn;
     }
@@ -15,3 +16,4 @@ class Shift {
 
 }
 ?>
+
